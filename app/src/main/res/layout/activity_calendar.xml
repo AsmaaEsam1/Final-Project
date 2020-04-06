@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/event_title"
+            android:hint="Event Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            />
+        <EditText
+            android:id="@+id/event_des"
+            android:hint="Event Description"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Start Time: "
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/event_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="1/4/2020 12:00 PM"
+            android:layout_weight="1"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event End Time: "
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/event_send_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="1/4/2020 12:00 PM"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:hint="Event Location"
+            android:ems="15"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_google_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Integration Calender"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_list_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Events List"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

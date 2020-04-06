@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login by Zoom account"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark"
+        android:textSize="16sp"
+        />
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:ems="15"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/etUser"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@+id/etUser"
+        />
+
+    <Button
+        android:id="@+id/btLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

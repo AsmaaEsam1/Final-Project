@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart</string>
+    <string name="meeting_number">Meeting Number</string>
+    <string name="join_meeting">Join Meeting</string>
+    <string name="login">Login</string>
+    <string name="without_login">Without Login</string>
+    <string name="pssword">Pssword</string>
+
+    <string name="name">Name</string>
+    <string name="startinstantmeeting">StartInstantMeeting</string>
+    <string name="start_instant_meeting">Start instant meeting</string>
+</resources>
